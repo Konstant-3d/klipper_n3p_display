@@ -4882,6 +4882,24 @@ information on menu attributes available during template rendering.
 #   mode start or end.
 ```
 
+### [neptune screen]
+Support for the Elegoo screen for the Neptune 3/3 Plus/3 Max.
+A [serial bridge](#serial_bridge) must be setup for communciation to
+take place. Communication is based on versions (1.4.2) and earlier.
+
+```
+[neptune_screen]
+#serial_bridge:
+#   Name of the serial_bridge to be used for communication
+#variant:
+#   The device variant to report to the screen. Possible values are
+#   3Pro: Neptune 3 Pro
+#   3Max: Neptune 3 Max
+#   3Plus: Neptune 3 Plus
+#   The default value is 3Pro
+#logging:
+#   Boolean used to enable/disable verbose logging. Default is False.
+```
 ## Filament sensors
 
 ### [filament_switch_sensor]
